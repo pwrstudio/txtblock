@@ -126,6 +126,19 @@ We see the following pros in the proposal outlined above:
 - The decentralized architecture making censorship much more difficult  
 
 ## References
+
+	[PURL]: https://sites.google.com/site/persistenturls/
+	[DOI]: https://www.doi.org
+	[Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
+	[Markdown]: http://daringfireball.net/projects/markdown/
+	[MultiMarkdown]: http://fletcher.github.io/MultiMarkdown-4/metadata.html
+	[cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
+	[IPFS]: http://ipfs.io/
+	[Swarm]: https://github.com/ethereum/go-ethereum/wiki/Swarm---distributed-preimage-archive
+	[StorJ]: http://storj.io/
+	[BitTorrent]: http://www.bittorrent.org/beps/bep_0005.html
+	[OriginStamp]: http://www.originstamp.org/
+
 [PURL]: https://sites.google.com/site/persistenturls/
 [DOI]: https://www.doi.org
 [Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
