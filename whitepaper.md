@@ -94,30 +94,27 @@ While an author can be specified in the metadata, this is not obligatory. This e
 
 ### Decentralized storage
 
-The core catalogue will only store a reference-fingerprint of the text. So how to store the actual text? Many solutions would be possible. Following the spirit of the project, a decentralized storage system would naturally be ideal. At this point there are a number of such solutions existing or under development:
+The core catalogue will only store a reference-fingerprint of the text. So how to store the actual text? Many solutions would be possible. Following the spirit of the project, a decentralized storage system is the natural choice. 
+
+At this point there are a number of such solutions existing or under development:
 
 - [Swarm]
 - [IPFS]
 - [StorJ]
 - [BitTorrent]
 
-We are looking at these strive to be compatible all of them, as well as centralized, local, storage. 
+We are looking at these, and will strive to be open to as many storage methods as possible. 
 
-X will provide a linking schemes such as:
-
-    X:3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
-
-In the end the information will need to pass verification of the catalogue, so the storage points do not have to be trusted, as long as redundancy is achieved.
 
 ### Client
 
-In order for X to be useful the layer that meets the user needs to be
+In order for X to be useful the layer that meets the user needs to offer a unified, well designed reading experience.
 
 Bringing attention to the underlying positives of the system without losing focus on the main thing: the text content. We will focus on the value of a unified, well designed reading experience.
 
 Through the design of the experience we aim to draw a strong line between the private and the public – storing texts encrypted on the local device until published – making it clear when this line is crossed. 
 
-With the area of dedicated digital reading being dominated by proprietary systems such as kindle and iBook and lack of open alternatives with attractive implementations. (bra!)
+With the area of dedicated digital reading being dominated by proprietary systems such as kindle and iBook and lack of open alternatives with attractive implementations.
 
 ## Conclusion
 
@@ -140,8 +137,3 @@ We see the following pros in the proposal outlined above:
 [StorJ]: http://storj.io/
 [BitTorrent]: http://www.bittorrent.org/beps/bep_0005.html
 [OriginStamp]: http://www.originstamp.org/
-
-http://ethereum.gitbooks.io/frontier-guide/content/registrar_services.html
-
-
-(bra!!)
