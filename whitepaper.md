@@ -12,33 +12,24 @@ Adding Petabytes of data to the global library everyday.
 Google rebranding as Alphabet, proposing to organize the information of the world. All the information.
 privatization of words
 
-
-
 ## Background
 
-What does it mean to publish in a time of xxxxxx? According to the dictionary it is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past publishing was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blurred. While the action of having printed, bound and distributed a book, for instance, is an unmistakeable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between.
+What does the verb “to publish” mean in a time of hyper circulation? According to the dictionary “publishing” is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blurred. While the action of printing, binding and distribuing a book is an unmistakeable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between. Is publishing then a anachronistic term best left behind in the age of paper?
 
-There is additionally the problem of conservation and ownership of the published information. Stored by a few major players, to be analysed and mined for commercial value. authority names
+There is the problem of long-term addressability of information: Address might change, servers go down, companies go out of business. Schemes such as DOI (Digital Object Identifier) or PURL (Persistent uniform resource locator) have been implemented to come to terms with this. 
 
-Address might change, servers go down, companies go out of business.
-
-Adddressed by schemes such as DOI (Digital Object Identifier) or PURL (Persistent uniform resource locator), centralized system governance and management, payment, institutional backing, high barrier to entry, Registration Authority
-
-ot reliant on any organization
-
-published as an ISO standard where the actual document is not available without payment.
-
-The criteria we set up for a publication are:
-
-- publicly available
-- uniquely referable
+In addition there is the problem of increasingly centralized ownership of the published information. Stored by a few major players, forming the core resource of their business model. A resource to be analysed and mined for commercial value.
 
 
 ## Proposal
 
-We propose a decentralised system for publishing and distribution of digital text – a sort of ISBN for digital publications. 
+We propose a decentralised platform for publishing and distribution of digital texts.
 
-open standards
+
+
+The criteria we set up for what constitutes a publication are:
+- publicly available
+- uniquely referrable
 
 The system consists of three parts
 
@@ -46,45 +37,47 @@ The system consists of three parts
 2. A decentralised file sharing system
 3. A client application
 
+Where the (1) and (2) is a set of open standards (as far as possible existing such standards) and (3) is a interface for interacting (reading \ publishing) to the underlying system.
+
+Enable trustless persistent identification and digital robustness.
+
 
 ### Decentralised index
 
-persistent identification
-first class entity
-digital robustness
-trustless
+The core of the system is a decentralized index or catalogue
 
-The core of the system, a sort of ISBN for digital publications.  
+Where as previous solutions to the problem of persisten referability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority.
 
-Notary function
+##### Ethereum
 
-smart contract
+The technology that enables this is Ethereum, a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain technology, enabling agreement beweeen nodes in a network without a central authority. The integrity of the system is maintained through the economically incentive zed cryptographic labour of XXXXX. 
 
-ethereum/blockchain
-mechanism for trust
+small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)
 
 
-— tamperproof & censorship proof 
-Whereas a ISBN number has no connection to the actual information contained in the book.
+##### Tamperproof & Censorship proof 
 
-by using a SHA3 hashing function
-fingerprint that will change if a single letter is replaced.
+In contrast to a ISBN or DOI identifier, a X indentifier is  
+Forming a very strong link connecting the content to its reference.
 
-connecting the content to its reference.
+By using a cryptographic hashing function a fingerprint is created. Changing a single letter in the file will completely change the fingerprint. A tampered/with file would therefore fail verification against the. This allows a certainty that the text you are reading is indeed the exact text that was published. 
 
-For example:
+A X identifier could look as follows:
 
     3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
-With the additional prossibility of refering to parts of the document with a notation such as: 
+##### Timestamped
+
+Proving that a certain information was published at a certain time. Similar to for example Origincoin, that is built onto of the bitcoin blockchain.
+
+
+
+##### Atomic referability
+With the additional prossibility of referring to parts of the document with a notation such as: 
 
     3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb:5f8743
 
-— timestamped
 
-Proving when something was published. Similar to for example Origincoin, that is built onto of the bitcoin blockchain.
-
-small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)
 
 ### Decentralised storage
 
@@ -100,9 +93,21 @@ simplicity
 connecting with the historical lineage of the book
 pure text (unicode) with markdown formatting + meta header 
 
-more popular files will be more widely 
+##### Formatting
 
-But we might also 
+X use the Markdown standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…)
+
+The actual styling of the text is left to the client software.
+
+##### Metadata
+
+A header containing metadata is added to the content, affecting the hash/fingerprint and therefore tamperproof. Saved as a json data-structure.
+
+##### Anonymity
+
+While an author can be specified in the metadata, this is not obligatory.
+There would also be the option of connecting it to more authoritive personal identity systems by adding custom fields to the metadata header. 
+
 
 ### client
 
@@ -110,17 +115,14 @@ cross-platform: web, phone.
 
 unified reading experience.
 
+Lack of good alternatives for (kindel, iBook)
+open standards such as ePub lacking attractive implementations.
+
 similar to medium, filling a empty space in the ebook reader market
 
 clear line between private and public (encrypted and stored locally until published)
 
-open to alternative clients…
-
-### Additional considerations
-— anonymity
-
-publicly authored?
-
+The client would just be one, holding no special authrity other than being the first. The field is open to alternative clients…
 
 ## Conclusion
 
