@@ -118,9 +118,9 @@ With the area of dedicated digital reading being dominated by proprietary system
 
 ## Conclusion
 
-With google rebranding as Alphabet while striving to organize the world from A to Z, there is an urgent need for other models of organisation of information, beyond giant data centers and walled garden. We believe that recent developments offer opportunities for such new models. 
+With google rebranding as Alphabet ans working to organize the world from A to Z, there is an urgent need for other models of organisation of information, beyond giant data centers and walled garden. We believe that recent developments offer opportunities for such new models. 
 
-We see the following pros in the proposal outlined above:
+We see the following positive aspects of the proposal outlined above:
 
 - The strong link between the identifier and the information identified 
 - The decentralized architecture making censorship much more difficult  
