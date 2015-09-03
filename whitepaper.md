@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In this text we briefly outline a decentralized platform for publication and distribution of digital texts enabling persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified the system is made tamper-proof and resistant to censorship. We see this proposal as one component of a movement towards a different internet. 
+In this text we briefly outline a decentralized platform for publication and distribution of digital texts enabling persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified (a sort of digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one component of a movement towards a different internet. 
 
 The system consists of a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed storage system(s) and a client for reading and publishing.
 
@@ -17,9 +17,9 @@ We would like to re-assert the idea of permanent publications in contrast to inf
 
 What does the verb “to publish” mean in a time of hypercirculation? According to the dictionary “publishing” is either the business of producing books and magazines or – secondarily and more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public on a potentially global scale is now at most people’s fingertips and the line between private and public is effectively blurred. While the action of printing, binding and distributing a book is an unmistakable step from the private to the public sphere, many current publishing tools exist in a grey zone in-between. 
 
-Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re/asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
+Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
 
-We believe there is a need for long-term addressability of information: Addresses change, servers fail, companies go out of business. Schemes such as [DOI] (Digital Object Identifier) or [PURL] (Persistent uniform resource locator) have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public. 
+We believe there is a need for long-term addressability of information: Addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public. 
 
 In addition there is the problem of increasingly centralized control of the published information. Stored by a few major players – forming the core asset of their business model: A resource to be analysed and mined for commercial value.
 
@@ -84,7 +84,7 @@ Or to a range of text
 
 ##### Format
 
-As every bit of information is crucial in establishing the identity of a publication there needs to be a standardized way of formatting the text. X use the [Markdown] standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…) The actual visual styling of the text is left to the client software.
+As every bit of information is crucial in establishing the identity of a publication there needs to be a standardized way of formatting the text. X use the [Markdown] standard for saving information about basic formatting of the text (bold, italic, headline, blockquotes, etc…) The actual visual styling of the text is left to the client software.
 
 A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not obligatory) keys and the possibility of adding your own.
 
@@ -139,8 +139,8 @@ We see the following pros in the proposal outlined above:
 	[BitTorrent]: http://www.bittorrent.org/beps/bep_0005.html
 	[OriginStamp]: http://www.originstamp.org/
 
-[PURL]: https://sites.google.com/site/persistenturls/
-[DOI]: https://www.doi.org
+[Persistent uniform resource locator]: https://sites.google.com/site/persistenturls/
+[Digital Object Identifier]: https://www.doi.org
 [Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
 [Markdown]: http://daringfireball.net/projects/markdown/
 [MultiMarkdown]: http://fletcher.github.io/MultiMarkdown-4/metadata.html
