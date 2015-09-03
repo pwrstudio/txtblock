@@ -1,153 +1,133 @@
 # PUBLICATION SYSTEM X
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
+
 ## Introduction
 
 *”We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name.”*
+— [Julian Assange. Hans Ulrich Obrist In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011.]( http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/)
 
-— Julian Assange. Hans Ulrich Obrist: In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011. http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/
-
-Adding Petabytes of data to the global library everyday.
+Adding Petabytes of data to the global data store every day.
 
 Google rebranding as Alphabet, proposing to organize the information of the world. All the information.
 privatization of words
 
+
 ## Background
 
-What does the verb “to publish” mean in a time of hyper circulation? According to the dictionary “publishing” is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blurred. While the action of printing, binding and distribuing a book is an unmistakeable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between. Is publishing then a anachronistic term best left behind in the age of paper?
+What does the verb "to publish" mean in a time of hypercirculation? According to the dictionary "publishing" is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blured. While the action of printing, binding and distribuing a book is an unmistakeable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between the two. Is "publishing" then a anachronistic term best left behind in the age of paper? We belive there is a point in re/asserting the category of the "publication" – a stable unit of information in contrast to the ephemeral flow.  
 
-There is the problem of long-term addressability of information: Address might change, servers go down, companies go out of business. Schemes such as DOI (Digital Object Identifier) or PURL (Persistent uniform resource locator) have been implemented to come to terms with this. 
+There is the problem of long-term addressability of information: Addresses change, servers fail, companies go out of business. Schemes such as [DOI] (Digital Object Identifier) or [PURL] (Persistent uniform resource locator) have been implemented to come to terms with this. 
 
-In addition there is the problem of increasingly centralized ownership of the published information. Stored by a few major players, forming the core resource of their business model. A resource to be analysed and mined for commercial value.
+In addition there is the problem of increasingly centralized control of the published information. Stored by a few major players, forming the core asset of their business model: A resource to be analysed and mined for commercial value.
 
 
 ## Proposal
 
-We propose a decentralised platform for publishing and distribution of digital texts.
-
-
+We propose a decentralised platform for publishing and distribution of digital texts. Enable trustless persistent identification and digital robustness.
 
 The criteria we set up for what constitutes a publication are:
+- uniquely identifiedable
 - publicly available
-- uniquely referrable
+- easily accesible  
 
-The system consists of three parts
-
+Tp address these criteria we propose a system consisting of three parts
 1. A decentralised index
 2. A decentralised file sharing system
 3. A client application
 
-Where the (1) and (2) is a set of open standards (as far as possible existing such standards) and (3) is a interface for interacting (reading \ publishing) to the underlying system.
+Where the (1) and (2) is a set of open standards (as far as possible existing such standards) and (3) is a interface for interacting (reading/publishing) with the underlying system.
 
-Enable trustless persistent identification and digital robustness.
-
+X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. We belive it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer.
 
 ### Decentralised index
 
-The core of the system is a decentralized index or catalogue
+The core of the system is a decentralized index or catalogue preserving references to all publications. Where as previous solutions to the problem of persistent referability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority system.
 
-Where as previous solutions to the problem of persisten referability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority.
 
 ##### Ethereum
 
-The technology that enables this is Ethereum, a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain technology, enabling agreement beweeen nodes in a network without a central authority. The integrity of the system is maintained through the economically incentive zed cryptographic labour of XXXXX. 
-
-small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)
+The technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, enabling agreement beweeen nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines. This is the operating system on top of which the core of X runs. The operation of publishing will require a small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)
 
 
 ##### Tamperproof & Censorship proof 
 
-In contrast to a ISBN or DOI identifier, a X indentifier is  
-Forming a very strong link connecting the content to its reference.
-
-By using a cryptographic hashing function a fingerprint is created. Changing a single letter in the file will completely change the fingerprint. A tampered/with file would therefore fail verification against the. This allows a certainty that the text you are reading is indeed the exact text that was published. 
+In contrast to a ISBN or DOI identifier, a X identifier is tied to the information it indentifies. By using a [cryptographic hashing function] a fingerprint of the information is created. Changing a single letter in the information will completely change the fingerprint. A modified file would therefore fail verification against the catalogue. This allows a certainty that the text you are reading is indeed the exact text that was published – especially important as the actual file will be stored in a decentralized manner by all the participants of the network.
 
 A X identifier could look as follows:
 
     3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
+
 ##### Timestamped
 
-Proving that a certain information was published at a certain time. Similar to for example Origincoin, that is built onto of the bitcoin blockchain.
+In addition to the identifier the catalogue will also store a timestamp of the moment of publication. In this way it can be proven that certain information was made public at a certain date, similar to how for example [OriginStamp] works on top of the bitcoin blockchain. 
+
+##### Atomic addressability
+It will also be possible to refer to parts of the document with a dot notation such as: 
+
+    3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743
+    
+With the postfix being a offset from the start of the file.
+
+Or to a range of text like so:
+    
+    3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743-a489b4
 
 
+##### Format
 
-##### Atomic referability
-With the additional prossibility of referring to parts of the document with a notation such as: 
-
-    3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb:5f8743
-
-
+As every bit is crucial in establishing the identity of a publication there needs to be a standardized way of formatting the text. X use the [Markdown] standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…) The actual visual styling of the text is left to the client software.
 
 ### Decentralised storage
 
-Identifier being resolved to multiple locations
+The core catalogue will only store a reference to the text. So how to store the actual text? 
 
-- swarm
-- ipfs
-- bittorrent
-- storage–agnostic
+At this point there are a number of decentralized storage solutions existing or under development:
 
-text-only:
-simplicity
-connecting with the historical lineage of the book
-pure text (unicode) with markdown formatting + meta header 
+- [Swarm]
+- [IPFS]
+- [StorJ]
+- [BitTorrent]
 
-##### Formatting
+We are looking at these strive to be compatible with 
 
-X use the Markdown standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…)
+Providing a linking schemes such as:
 
-The actual styling of the text is left to the client software.
+    X:3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
 ##### Metadata
 
-A header containing metadata is added to the content, affecting the hash/fingerprint and therefore tamperproof. Saved as a json data-structure.
+A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in MultiMarkdown, with a few standard (but not obligatory) keys and the possibility of adding your own.
 
-##### Anonymity
+##### Pseudonymity
 
-While an author can be specified in the metadata, this is not obligatory.
-There would also be the option of connecting it to more authoritive personal identity systems by adding custom fields to the metadata header. 
+While an author can be specified in the metadata, this is not obligatory. This enables pseudonymous publication – to the extent that measures are taken to maintain this pseudonymity through all the layers of the system. On the other hand there would also be the option of connecting it to more authoritive personal identity systems by adding custom fields to the metadata header. 
 
-
-### client
+### Client
 
 cross-platform: web, phone.
+
+Through the design of the experience of we aim to draw a clear line between the private and the public – storeing  texts encrypted on the local device until published – making it quite clear when this line is crossed. 
 
 unified reading experience.
 
 Lack of good alternatives for (kindel, iBook)
 open standards such as ePub lacking attractive implementations.
 
-similar to medium, filling a empty space in the ebook reader market
-
-clear line between private and public (encrypted and stored locally until published)
-
 The client would just be one, holding no special authrity other than being the first. The field is open to alternative clients…
 
 ## Conclusion
 
-XXXXX
-
 ## References
 
-https://github.com/ethereum/wiki/wiki/White-Paper
-
-http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/
-
-http://www.theindexer.org/files/18-1/18-1_025.pdf
-
-https://sites.google.com/site/persistenturls/
-
-http://www.editeur.org/files/Collaborations/Publications/ISO%20Focus%20April%202011%20-%20Stella%20Griffiths%20-%20ISBN%20Special%20Report.pdf
-
-http://p-dpa.net
-
-http://www.nist.gov/customcf/get_pdf.cfm?pub_id=919061
-
-http://emn178.github.io/online-tools/sha3_512.html
-
-http://www.proofofexistence.com/
-
-http://www.originstamp.org/
-
-http://daringfireball.net/projects/markdown/
+[PURL]: https://sites.google.com/site/persistenturls/
+[DOI]: https://www.doi.org
+[Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
+[Markdown]: http://daringfireball.net/projects/markdown/
+[cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
+[IPFS]: http://ipfs.io/
+[Swarm]: https://github.com/ethereum/go-ethereum/wiki/Swarm---distributed-preimage-archive
+[StorJ]: http://storj.io/
+[BitTorrent]: http://www.bittorrent.org/beps/bep_0005.html
+[OriginStamp]: http://www.originstamp.org/
