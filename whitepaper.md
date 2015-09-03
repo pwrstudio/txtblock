@@ -4,8 +4,8 @@
 
 ## Introduction
 
-*"We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name."*
-– [Julian Assange. Hans Ulrich Obrist In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011.]( http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/)
+	*”We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name.”*
+	– [Julian Assange. Hans Ulrich Obrist In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011.]( http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/)
 
 Adding Petabytes of data to the global data store every day.
 
@@ -15,7 +15,7 @@ privatization of words
 
 ## Background
 
-What does the verb "to publish" mean in a time of hypercirculation? According to the dictionary "publishing" is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blurred. While the action of printing, binding and distributing a book is an unmistakable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between the two. Is "publishing" then a anachronistic term best left behind in the age of paper? We believe there is a point in re/asserting the category of the "publication" – a stable unit of information in contrast to the ephemeral flow.  
+What does the verb “to publish” mean in a time of hyper circulation? According to the dictionary “publishing” is either the business of producing books and magazines or – more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday activity. The technology needed for making something public is now omnipresent and the line between private and public is effectively blurred. While the action of printing, binding and distributing a book is an unmistakable step from the private to the public sphere. In contrast many current publishing tools exist in a grey zone in-between the two. Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re/asserting the category of the “publication” – a stable unit of information in contrast to the ephemeral flow.  
 
 There is the problem of long-term addressability of information: Addresses change, servers fail, companies go out of business. Schemes such as [DOI] (Digital Object Identifier) or [PURL] (Persistent uniform resource locator) have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public. 
 
@@ -55,7 +55,6 @@ The technology that enables this is [Ethereum], a decentralized platform that ru
 In contrast to a ISBN or DOI identifier, a X identifier is tied to the information it indentifies. By using a [cryptographic hashing function] a fingerprint of the information is created. Changing a single letter in the information will completely change the fingerprint. A modified file would therefore fail verification against the catalogue. This allows a certainty that the text you are reading is indeed the exact text that was published – especially important as the actual file will be stored in a decentralized manner by all the participants of the network.
 
 A X identifier could look as follows:
-
     3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
 
@@ -79,6 +78,12 @@ Or to a range of text like so:
 
 As every bit of information is crucial in establishing the identity of a publication there needs to be a standardized way of formatting the text. X use the [Markdown] standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…) The actual visual styling of the text is left to the client software.
 
+A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not obligatory) keys and the possibility of adding your own.
+
+##### Pseudonymity
+
+While an author can be specified in the metadata, this is not obligatory. This enables pseudonymous publication – to the extent that measures are taken to maintain this pseudonymity through all the layers of the system. On the other hand there would also be the option of connecting it to more authoritative personal identity systems by adding custom fields to the metadata header. 
+
 ### Decentralized storage
 
 The core catalogue will only store a reference-fingerprint of the text. So how to store the actual text? Many solutions would be possible. Following the spirit of the project, a decentralized storage system would naturally be ideal. At this point there are a number of such solutions existing or under development:
@@ -95,14 +100,6 @@ X will provide a linking schemes such as:
     X:3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
 In the end the information will need to pass verification of the catalogue, so the storage points do not have to be trusted, as long as redundancy is achived.
-
-##### Metadata
-
-A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not obligatory) keys and the possibility of adding your own.
-
-##### Pseudonymity
-
-While an author can be specified in the metadata, this is not obligatory. This enables pseudonymous publication – to the extent that measures are taken to maintain this pseudonymity through all the layers of the system. On the other hand there would also be the option of connecting it to more authoritative personal identity systems by adding custom fields to the metadata header. 
 
 ### Client
 
