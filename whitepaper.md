@@ -42,53 +42,55 @@ To address these criteria we propose a system consisting of three parts
 2. A decentralized file sharing system
 3. A client application
 
-Where the (1) and (2) is a set of open standards (as far as possible existing such standards) and (3) is a interface for interacting (reading/publishing) with the underlying system.
+Where (1) and (2) is a set of open standards (as far as possible existing such standards) and (3) is a interface for interacting (reading/publishing) with the underlying system.
 
-X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. We believe it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer.  (bra!)
+X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. We believe it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer.
 
 ### Decentralized index
 
-The core of the system is a decentralized index or catalogue preserving references to all publications. Where as previous solutions to the problem of persistent reparability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority system.  (bra!)
+The core of the system is a decentralized index or catalogue preserving references to all publications. Where as previous solutions to the problem of persistent reparability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority system.
 
 ##### Ethereum
 
-The technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, enabling agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines. This is the operating system on top of which the core of X runs. The operation of publishing will require a small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)  (bra!)
+The technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, enabling agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines. This is the operating system on top of which the core of X runs. The operation of publishing will require a small transaction fee (a one-time payment for the computing power needed to add the entry to the database.)
 
 ##### Tamperproof & Censorship resistant
 
 In contrast to a ISBN or DOI identifier, a X identifier is tied to the information it identifies. By using a [cryptographic hashing function] a fingerprint of the information is created. Changing a single letter in the information will completely change the fingerprint. A modified file would therefor fail verification against the catalogue. This allows a certainty that the text you are reading is indeed the exact text that was published – especially important as the actual file will be stored in a decentralized manner by all the participants of the network.
 
 A X identifier could look as follows:
-    3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
-The space of identifiers has a flat architecture without national, organisational or other subcategories. (vad menas med space här?)
+	3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
+
+The space of identifiers has a flat architecture without national, organisational or other sub-division: it is merely a fingerprint of the digital information it refers to.
+
 
 ##### Timestamped
 
-In addition to the identifier the catalogue will also store a timestamp of the moment of publication. In this way it can be proven that certain information was made public at a certain date, similar to how for example [OriginStamp] works on top of the bitcoin blockchain. (bra!)
+In addition to the identifier the catalogue will store a timestamp of the moment of publication. In this way it can be proven that certain information was made public at a certain date, similar to how for example [OriginStamp] works on top of the bitcoin blockchain.
 
 ##### Atomic addressability
-It will also be possible to refer to parts of the document with a dot notation such as: 
 
-3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743
+It will also be possible to refer to parts of the document with a dot notation such as 
+
+	3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743
     
 With the postfix being a offset from the start of the file.
 
-Or to a range of text like so:
+Or to a range of text 
     
-3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743-a489b4
+	3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743-a489b4
 
-(förstår inte riktigt, behövs detta göras mer tydligt?)
 
 ##### Format
 
 As every bit of information is crucial in establishing the identity of a publication there needs to be a standardized way of formatting the text. X use the [Markdown] standard for saving information about basic formatting of the text (bold, italic, headline, block quotes, etc…) The actual visual styling of the text is left to the client software.
 
-A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not obligatory) keys and the possibility of adding your own. (bra!)
+A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not obligatory) keys and the possibility of adding your own.
 
 ##### Pseudonymity
 
-While an author can be specified in the metadata, this is not obligatory. This enables pseudonymous publication – to the extent that measures are taken to maintain this pseudonymity through all the layers of the system. On the other hand there would also be the option of connecting it to more authoritative personal identity systems by adding custom fields to the metadata header. (bra!)
+While an author can be specified in the metadata, this is not obligatory. This enables pseudonymous publication – to the extent that measures are taken to maintain this pseudonymity through all the layers of the system. On the other hand there would also be the option of connecting it to more authoritative personal identity systems by adding custom fields to the metadata header.
 
 ### Decentralized storage
 
@@ -99,31 +101,31 @@ The core catalogue will only store a reference-fingerprint of the text. So how t
 - [StorJ]
 - [BitTorrent]
 
-We are looking at these strive to be compatible all of them, as well as centralized, local, storage. (förtydliga mening?)
+We are looking at these strive to be compatible all of them, as well as centralized, local, storage. 
 
 X will provide a linking schemes such as:
 
     X:3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb
 
-In the end the information will need to pass verification of the catalogue, so the storage points do not have to be trusted, as long as redundancy is achieved. (kanske förtydliga detta sista stycke detta mer..?)
+In the end the information will need to pass verification of the catalogue, so the storage points do not have to be trusted, as long as redundancy is achieved.
 
 ### Client
 
-In order for X to be useful the layer that meets the user needs to be: 
+In order for X to be useful the layer that meets the user needs to be
 
 Bringing attention to the underlying positives of the system without losing focus on the main thing: the text content. We will focus on the value of a unified, well designed reading experience.
 
-Through the design of the experience we aim to draw a clear line between the private and the public – storing texts encrypted on the local device until published – making it quite clear when this line is crossed. 
+Through the design of the experience we aim to draw a strong line between the private and the public – storing texts encrypted on the local device until published – making it clear when this line is crossed. 
 
 With the area of dedicated digital reading being dominated by proprietary systems such as kindle and iBook and lack of open alternatives with attractive implementations. (bra!)
 
 ## Conclusion
 
-With google rebranding as Alphabet, striving to organize the world from A to Z, there is an urgent need for new other models of organisation of information, beyond giant data centers and walled garden. We believe that recent developments offer opportunities for such new models. 
+With google rebranding as Alphabet while striving to organize the world from A to Z, there is an urgent need for other models of organisation of information, beyond giant data centers and walled garden. We believe that recent developments offer opportunities for such new models. 
 
 We see the following pros in the proposal outlined above:
 
-- The strong link betweeen the identifier and the information identified 
+- The strong link between the identifier and the information identified 
 - The decentralized architecture making censorship much more difficult  
 
 ## References
