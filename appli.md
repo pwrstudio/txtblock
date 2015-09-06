@@ -1,21 +1,22 @@
-
 ### Projektsammanfattning
 #### Idé och mål, omfattning, nyttan för Internet/.SE max 4000 tecken, ca 3000 tecken rekommenderas. Kommer att publiceras i samband med beviljad ansökan.
 
 Vi vill skapa en decentraliserad plattform för publikation och distribution av digitala texter. Kärnan är ett identifikationssystem där textinnehållet kryptografiskt sammankopplas med den kod som representerar det: ett sorts digitalt fingeravtryck. Till skillnad från till exempel ett ISBN-nummer går det att kontrollera att innehållet är exakt det samma som publicerades. Det ger ett starkt skydd mot censur och manipulation.  
 
-En direkt inspiration är den vision som Julian Assange beskrev i en intervju från 2011:  
+En direkt inspiration är den vision som Julian Assange beskriver i en intervju från 2011:  
 
 ”We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name.”
 
 – Julian Assange. Hans Ulrich Obrist In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011.
 http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/
 
-Identifikationssystemet planerar vi bygga på ett nytt infrastrukturellt system kallat Ethereum. Detta ambitiösa men unga projekt använder en distribuerad databasteknik, så kallad Blockchain-teknik, för att samordna ett nätverk utan en central kontrollpunkt. Identifikationssystemet kommer fungera som en öppen katalog. 
+Sen vi läste detta för fyra år sedan har det funnits i våra bakhuvuden, men det är inte förrän de senaste månaderna som vi har förstått hur det tekniskt och praktiskt skulle kunna genomföras. 
+
+Identifikationssystemet planerar vi bygga ovanpå ett nytt infrastrukturellt system kallat Ethereum. Detta ambitiösa men unga projekt använder en distribuerad databasteknik, så kallad Blockchain-teknik, för att samordna ett nätverk utan en central kontrollpunkt. Identifikationssystemet kommer fungera som en öppen katalog. 
 
 Målet är att sjösätta och bygga upp ett nätverk runt projektet och i dialog med externa parter utforma ett öppet protokoll. Vi planerar också skapa ett attraktivt gränssnitt: en web- och mobilapp som möjliggör att läsa och publicera.
 
-Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar informationsenhet kan spela en viktig roll som komplement till vår snabbt flödande digitala verklighet. Publikationen som en kollektiv minnesenhet med än längre tidskala.
+Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar informationsenhet kan spela en viktig roll som komplement till vår snabbt flödande digitala verklighet. Publikationen som en kollektiv minnesenhet med än längre tidsskala.
 
 
   
@@ -26,13 +27,15 @@ Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar inform
 
 Vad innebär det att publicerar idag? I århundraden efter boktryckarkonstens födelse krävdes det avsevärda resurser för att kunna göra någonting offentligt. Men de senaste årtiondet har dessa handlingar blivit en nästan osynlig del av vår digitala vardag med konsekvensen att gränsen mellan den privat och offentliga sfären gjorts oklar och suddig. Att trycka, binda och distribuera en bok var ett tydligt steg från den ena sfären till den andra – dagens kommunikations- och publiceringsverktyg, däremot, existerar ofta i en gråzon eller döljer till och med hur vår information sparas och publiceras.  
 
-Vi ser ett behov av ett öppet system för att skapa långsiktigt tillgängliga informationsenheter. Vi har gjort en inledande undersökning av existerande system för att publicerar, katalogisera och identifiera texter. Många av dom är kommersiella (Amazons Kindel, Apples iBook), de flesta andra är beroende av en central auktoritet som agerar som grindvakt och utfärdigar certifikat, inte sällan mot betalning. Inga av identifikationssystemen vi har hittat har egenskapen att identitetkoden är direkt, kryptografis, knuten till innehållet.
+Vi ser ett behov av ett öppet system för att skapa långsiktigt tillgängliga informationsenheter. Vi har gjort en inledande undersökning av existerande system för att publicerar, katalogisera och identifiera texter. Många av dom är kommersiella (Amazons Kindel, Apples iBook), de flesta andra är beroende av en central auktoritet som agerar som grindvakt och utfärdar certifikat, inte sällan mot betalning (t.ex. Digital Object Identifier, DOI). Inga av identifikationssystemen vi har hittat har egenskapen att identitetskoden är direkt, kryptografiskt, knuten till innehållet.
 
 
 ### Framgångsfaktorer
 #### Ange varför du tror att projektet kommer att lyckas och vad som är nyskapande med det.
 
-Den underliggande teknologin som möjliggör ett öppet, decentraliserat identifikationssystem, blockchaintekniken, är under stark utveckling vilket gör det till ett spännande fält att arbeta i – ett fält som inte fanns för bara ett år sedan.  Det gör att vi dels kan använda helt nya tekniker för att nå tidigare omöjliga mål, dels att det finns ett stort och växande intresse för applikationer i detta område.   
+Den underliggande teknologin som möjliggör ett öppet, decentraliserat identifikationssystem, blockchain-tekniken, är under stark utveckling vilket gör det till ett spännande fält att arbeta i – ett fält som inte fanns för bara ett år sedan.  Det gör att vi dels kan använda helt nya tekniker för att nå tidigare omöjliga mål, dels att det finns ett stort och växande intresse för applikationer i detta område.
+
+Det senaste    
 
 Vi har en bred design- och teknikkompetens och dessutom ett socialt och kulturhistoriskt intresse vilket gör att vi kan ta ett helhetsgrepp på frågan. Vi har ett stort kontaktnät inom den internetsammankopplade konst-, teori- och designvärlden vilket kommer att möjliggöra en konstruktiv dialog under utvecklingsarbetet samt bred och långsiktig spridning av vårt projekt. 
 
@@ -58,34 +61,40 @@ Kärnan i projektet, den decentraliserade katalogen, är beroende av radikalt ny
 
 Vi kommer tidigt och ofta offentliggöra vår arbetsprocess och försöka engagera intresserade människor. Vi kommer använda GitHub för att samordna vårt arbete och möjliggöra bidrag utifrån.
 
-Vi, de två huvudansvariga, kommer dela på de olika arbetsrollerna, men Hanna kommer fokusera mer på kommunikation och Rasmus mer på programmeringen. 
+Vi, de två huvudansvariga, kommer dela på de olika arbetsrollerna, men Hanna kommer fokusera mer på kommunikation och Rasmus mer på programmering. 
 
 Vi arbetar just nu på ett sammanfattande *white paper* som vi redan nu har skickat runt till bekanta som är involverade i relaterade fält. Vi hoppas genom detta öppna arbetssätt få
 
 https://github.com/pwrstudio/pub-whitepaper/blob/master/whitepaper.md
  
-Då innehållet uteslutande är text är typografin i fokus. Vi har länge arbetat och undervisat i typografi och grafisk design och har en stark förståelse för dess kommunikativa och estetiska värden. Vi har tidigare arbetat med typsnittsdesignern **Raphael Bastide** och vi planerar att samarbeta med honom i utformningen av ett nytt funktionellt och vackert skärmtypsnitt. Bastide arbetar enbart med typsnitt under open source licens, så  typsnittet han utvecklar skulle, i logisk parallell med huvudprojektet, var öppet för andra att bygga vidare på.  
+Då innehållet uteslutande är text är typografin i av högsta vikt. Vi har länge arbetat och undervisat i typografi och grafisk design och har en stark förståelse för dess kommunikativa och estetiska värden. Vi har tidigare arbetat med typsnittsdesignern **Raphael Bastide** och vi planerar att samarbeta med honom i utformningen av ett nytt funktionellt och vackert skärmtypsnitt. Bastide arbetar enbart med typsnitt under open source licens, så  typsnittet han utvecklar skulle, i logisk parallell med huvudprojektet, var öppet för andra att bygga vidare på.  
  
 
 ### Spridning 3000 tecken
 #### Beskriv hur projektresultatet ska spridas, till vem och när.
 
-För att inspirera människor till att börja använda vår applikation så kommer vi bjuda in olika skribenter, konstnärer och designers att bidra med de första texterna. Detta kommer att vara en både intressant och effektivt sätt att skapa ett intresse för vårt verktyg. Vi kommer även att kontakta olika stora och små organisationer och institutioner att publicera ett urval av sina texter hos oss. Genom att vi börjar med att samla bra texter, så kommer intresset för appen att växa och leda till ökad spridning. Vi kommer att kontakta Wikileaks, Gutenberg project, Rhizome m.fl.
+Det är naturligtvis avgörande att det verktyg vi konstruerar för vid användning. Utan innehåll är det ingenting. 
 
-De människor vi bjuder in till vår symposium kommer förutom att göra en föreläsning att skriva en text som kommer att publicerar i vår applikation. 
+För att inspirera människor till att börja använda vår applikation planerar vi att leda med exempel: vi tänker bjuda in skribenter från olika fält att bidra till en sorts essäsamling, publicerad via vårt system. Vissa av texterna skulle kunna handla om relaterade ämnen, till exempel skulle vi kunna be de personer vi bjuder in till vår symposium att sammanfatta sina presentationer i text form. Vi skulle också vilja inkludera andra typer av texter: poesi, skönlitteratur – för att visa på möjligheterna. Detta skulle kunna fungera som en inkörsport och inspirera andra att följa med.  
 
-Vi kommer att marknadsföra projektet på ett stort antal kanaler, både i Sverige och internationellt. Vi har ett stort kontaktnät och kommer att publicera nyheter om vårt verktyg på bl.a Wired, E-flux, DIS, Nowness, DN, Sydsvenskan med flera. 
+Ett annat väg vi tänker på är att ta kontakt med digitala publikationer och organisationer och erbjuda dom hjälp med att använda vårt publiceringssystem. Vi har tidigare arbetat med organisationen Rhizome som gör ett stort arbete för att bevara nätbaserad kultur. Vi tror att dom skulle kunna vara intresserade av ett samarbete på detta plan. Vi har också arbetat med de svenska tidskrifterna Const Literary Preview och OEI och planerar föreslå samarbeten med dom.     
 
+Naturligtvis kommer vi även att försöka få uppmärksamhet genom litteratur-, konst- och teknikpressen samt mer lokala svenska tidningar och webbpublikationer.    
 
 
 ### Förvaltning 3000 tecken
 #### Beskriv hur och vem som långsiktigt ska finansiera, tillhandahålla och vidareutveckla projektresultaten.
 
-Vårt projekt kommer vara open-source då vi vill skapa en öppen standard som är tillgänglig för alla. Vi kommer att utveckla dels standarden och en applikation. Då applikationen är baserad på ethereum systemet så finns det ett monetärt värde kopplat till systemet. Det krävs någon form av ekonomisk investering för att lagra information i blockchain. Det kommer därmed att ksota en mindre summa att använda vår applikation….
+Vårt mål är att utveckla en öppen standard och försöka bygga upp ett nätverk av intresserade deltagare runt det. Huvuddelen av systemet vi föreslår (den öppna katalogen, fildelningssystemet) kommer fungera utan vår inblandning, vilket just är en del av poängen. Vi ser det mer som att vi måste göra ett stort arbete i början för att dra igång projektet och att det sedan kommer kunna röra sig framåt själv. Vi kommer utveckla det som ett open source projekt – och basera det på existerande open source projekt så långt det bara går. På så sätt undviker vi att återuppfinna hjulet och kommer även i framtiden kunna ta del av det förbättringsarbete som pågår på andra projekt.
 
-Vårt verktyg är interesurskrävande då vi inte ska lagra någon information på en server, utan informationen kommer att lagras på nätverket. Efter att vi utvecklat verktyget och släppt det till allmänheten så behöver vi inte skaffa ytterligare extern ekonomisk kraft på sikt. Det vi behöver ekonomiskt stöd för nu är att utveckla och skapa själva verktyget. När det väl är gjort så kommer det sköta sig själv.
- 
-Vårt projekt är därmed inte resurskrävande, miljövänligt och på långsikt hållbart.
+Då vi kommer behöva undersöka hur vi kan grunda någon form av organisation eller stiftelse {{vad heter det på svenska??}} som kan lotsa projektet in i framtiden, så som till exempel Bitcoin Foundation fungerar.   
+
+Vi vill naturligtvis undvika allt vad reklam eller annan kommersiell finansiering heter. Idag är vi väldigt vana vid att tjänster är gratis på internet. Detta beror på att vi vanligen betalar med vår personliga data som på ett eller annat sätt omvandlas till inkomster för tjänsteleverantören. Vi tror, och hoppas, att vi kommer röra oss mot en annan finansieringmodell för internet.
+
+Att publicera via vårt system kommer kosta en liten summa för användaren: en transaktionskostnad som betalar nätverket för det arbete det måste utföra för att lägga in informationen i den distribuerade databasen. Exakt hur dessa peer-to-perr finansieringssystem kommer utveckla sig är ännu oklart – men vi ser det som en mycket spännande och viktig aspekt av projektet.      
+
+Klient-appen (webb och mobil) vi kommer skapa kommer kräva mer av vår tid. Dock, eftersom innehållet bara är text och vårt mål är att skapa en enkel, vacker, distraktionsfri läs- och publiceringsmiljö, kommer denna klient troligen inte kräva så stora resurser i tid eller datakapacitet. 
+
 
 
 ### Upphovsrätt 
@@ -99,6 +108,16 @@ Vi kommer driva projektet enligt Free Software och Open Source principer och lic
 Sverige har ett starkt internationellt rykte för skydd av yttrandefrihet och internetfrihet. Själva kärnan i systemet vi föreslår kommer fungera decentraliserat enligt peer-to-peer principer, och har ju därför en svår definierad geografisk hemvist. Dock är det mycket viktigt för oss att den . det vill säga 
 
 Vi tror att  
+
+### Uppföljning
+
+????
+
+## Övrigt
+
+### Bilaga, uppladdad fil 
+
+whitepaper
 
 
 
