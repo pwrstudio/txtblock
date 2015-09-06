@@ -2,13 +2,20 @@
 ### Projektsammanfattning
 #### Idé och mål, omfattning, nyttan för Internet/.SE max 4000 tecken, ca 3000 tecken rekommenderas. Kommer att publiceras i samband med beviljad ansökan.
 
-Vi vill skapa en decentraliserad plattform för publikation och distribution av digitala texter. Kärnan är ett identifikationssystem där innehållet kryptografiskt sammankopplas med den kod som representerar det: ett sorts digitalt fingeravtryck. Till skillnad från till exempel ett ISBN-nummer går det att kontrollera att innehållet är exakt det samma som publicerades. Det ger ett starkt skydd mot censur och manipulation.  
+Vi vill skapa en decentraliserad plattform för publikation och distribution av digitala texter. Kärnan är ett identifikationssystem där textinnehållet kryptografiskt sammankopplas med den kod som representerar det: ett sorts digitalt fingeravtryck. Till skillnad från till exempel ett ISBN-nummer går det att kontrollera att innehållet är exakt det samma som publicerades. Det ger ett starkt skydd mot censur och manipulation.  
 
-Identifikationssystemet planerar vi bygga på ett nytt infrastrukturellt system: Ethereum. Detta ambitiösa men unga projekt använder en distribuerad databasteknik, så kallad Blockchain-teknik, för att samordna ett nätverk utan en central kontrollpunkt. Identifikationssystemet kommer fungera som en öppen katalog. 
+En direkt inspiration är den vision som Julian Assange beskrev i en intervju från 2011:  
 
-Målet är att sjösätta och bygga upp ett nätverk runt projektet, i dialog med externa parter utforma ett öppet protokoll och skapa ett attraktivt gränssnitt.
+”We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name.”
 
-Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar informationsenhet kan spela en viktig roll som komplement till vår snabbt flödande digitala verklighet. Publikationen som en minnesenhet med än längre tidskala.
+– Julian Assange. Hans Ulrich Obrist In Conversation with Julian Assange, Part I, e-flux journal #25 . 05/2011.
+http://www.e-flux.com/journal/in-conversation-with-julian-assange-part-i/
+
+Identifikationssystemet planerar vi bygga på ett nytt infrastrukturellt system kallat Ethereum. Detta ambitiösa men unga projekt använder en distribuerad databasteknik, så kallad Blockchain-teknik, för att samordna ett nätverk utan en central kontrollpunkt. Identifikationssystemet kommer fungera som en öppen katalog. 
+
+Målet är att sjösätta och bygga upp ett nätverk runt projektet och i dialog med externa parter utforma ett öppet protokoll. Vi planerar också skapa ett attraktivt gränssnitt: en web- och mobilapp som möjliggör att läsa och publicera.
+
+Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar informationsenhet kan spela en viktig roll som komplement till vår snabbt flödande digitala verklighet. Publikationen som en kollektiv minnesenhet med än längre tidskala.
 
 
   
@@ -19,7 +26,7 @@ Vi anser att *publikationen* som en klart avgränsad, unikt identifierbar inform
 
 Vad innebär det att publicerar idag? I århundraden efter boktryckarkonstens födelse krävdes det avsevärda resurser för att kunna göra någonting offentligt. Men de senaste årtiondet har dessa handlingar blivit en nästan osynlig del av vår digitala vardag med konsekvensen att gränsen mellan den privat och offentliga sfären gjorts oklar och suddig. Att trycka, binda och distribuera en bok var ett tydligt steg från den ena sfären till den andra – dagens kommunikations- och publiceringsverktyg, däremot, existerar ofta i en gråzon eller döljer till och med hur vår information sparas och publiceras.  
 
-Vi ser ett behov av ett öppet system för att skapa långsiktigt tillgängliga informationsenheter. Vi har gjort en inledande undersökning av existerande system för att publicerar, katalogisera och identifiera texter. Många av dom är kommersiella (Amazons Kindel, Apples iBook), de flesta andra är beroende av en central auktoritet som agerar som grindvakt och utfärdigar certifikat, inte sällan mot betalning. Inga av identifikationssystemen vi har hittat har egenskapen att identitetkoden är direkt, kryptografiskt, knuten till innehållet.
+Vi ser ett behov av ett öppet system för att skapa långsiktigt tillgängliga informationsenheter. Vi har gjort en inledande undersökning av existerande system för att publicerar, katalogisera och identifiera texter. Många av dom är kommersiella (Amazons Kindel, Apples iBook), de flesta andra är beroende av en central auktoritet som agerar som grindvakt och utfärdigar certifikat, inte sällan mot betalning. Inga av identifikationssystemen vi har hittat har egenskapen att identitetkoden är direkt, kryptografis, knuten till innehållet.
 
 
 ### Framgångsfaktorer
@@ -35,15 +42,15 @@ Vi tror också att det faktum att vi avgränsar projektet avsevärt kommer att g
 ### Avgränsningar
 #### Ange vad projektet inte omfattar.
 
-Vårt applikation kommer bara att innehålla text. Detta är ett medvetet val då vi tror att resultatet kommer att bli tydligare, bättre och få ett större genomslag genom att renodla funktionen.
+Vårt applikation kommer bara att stödja textinnehåll. Detta är ett medvetet val då vi tror att resultatet kommer att bli tydligare, bättre och få ett större genomslag genom att renodla funktionen.
 
-En annan anledning till att denna version endast ska innehålla text är för att vi vill knyta an till, och revitalisera, boktraditionen. Vi anser att de öppna ebok-standarder som finns (då speciellt ePub-formatet) försöker göra något som bok-konceptet inte är lämpat för: integrerar andra media som video, interaktivitet, innehåll som ändras efter t.ex. läsarens identitet och geografiska position. Det finns redan verktyg för dessa typer av information: web-sidor, spel etc… Vi anser att bok/publikations-konceptets styrka är just dess stabila oföränderlighet – en enhet att referera till, diskutera och kritisera.      
+En viktig anledning är att vi vill knyta an till, och revitalisera, boktraditionen. Vi anser att de öppna ebok-standarder som finns (då speciellt ePub-formatet) försöker göra något som bok-konceptet inte är lämpat för: integrerar andra media som video, interaktivitet, innehåll som ändras efter t.ex. läsarens identitet och geografiska position. Det finns redan verktyg för dessa typer av information: web-sidor, spel etc… Vi anser att bok/publikations-konceptets styrka är just dess stabila oföränderlighet – en enhet att referera till, diskutera och kritisera.      
 
 
 ### Risker
 #### Ange vad som kan göra att projektet inte lyckas
 
-Kärnan i projektet, den decentraliserade katalogen, är beroende av radikalt ny teknik. Ethereum är ett mycket ambitiöst blockchain-baserat projekt understött av ett starkt nätverk av eldsjälar – men än så länge är det i sin linda. Vi har stark tilltro till att det kommer växa sig starkare och starkare och snart växer upp till en infrastruktur för en ny utveckling av internet. Dock finns det altid risker med ny teknik – men vi anser att möjligheterna avsevärt uppväger dessa! 
+Kärnan i projektet, den decentraliserade katalogen, är beroende av radikalt ny teknik. Ethereum är ett mycket ambitiöst blockchain-baserat projekt understött av ett starkt nätverk av eldsjälar – men än så länge är det i sin linda. Vi har stark tilltro till att det kommer växa sig starkare och starkare och snart växer upp till en infrastruktur för en ny utveckling av internet. Dock finns det alltid risker med ny teknik – men vi anser att möjligheterna avsevärt uppväger dessa! 
 
 
 ### Arbetsformer
@@ -51,11 +58,13 @@ Kärnan i projektet, den decentraliserade katalogen, är beroende av radikalt ny
 
 Vi kommer tidigt och ofta offentliggöra vår arbetsprocess och försöka engagera intresserade människor. Vi kommer använda GitHub för att samordna vårt arbete och möjliggöra bidrag utifrån.
 
-Vårt arbete kommer genomföras med hjälp av nätverksbaserade diskussioner. Jag och Hanna är jämställda partners i projektet med olika arbetsroller. Rasmus är ansvarig för programmering, design och projektledning. Hanna är ansvarig för design,  projektledning och kommunikation. 
+Vi, de två huvudansvariga, kommer dela på de olika arbetsrollerna, men Hanna kommer fokusera mer på kommunikation och Rasmus mer på programmeringen. 
 
-Vi kommer att jobba med att göra allting open-source. Vi har publicerat en första version av projektets i en white paper på Github, då vi vill att vår process ska vara transparent. 
-Vi kommer att göra många prototyper och versioner för att komma fram till den bästa versionen att släppa. Allt eftersom tiden går så kommer projeket utvecklas till andra versioner. 
-Vi vill skapa ett community där vi är öppna för bidrag från kollegor och andra människor.  
+Vi arbetar just nu på ett sammanfattande *white paper* som vi redan nu har skickat runt till bekanta som är involverade i relaterade fält. Vi hoppas genom detta öppna arbetssätt få
+
+https://github.com/pwrstudio/pub-whitepaper/blob/master/whitepaper.md
+ 
+Då innehållet uteslutande är text är typografin i fokus. Vi har länge arbetat och undervisat i typografi och grafisk design och har en stark förståelse för dess kommunikativa och estetiska värden. Vi har tidigare arbetat med typsnittsdesignern **Raphael Bastide** och vi planerar att samarbeta med honom i utformningen av ett nytt funktionellt och vackert skärmtypsnitt. Bastide arbetar enbart med typsnitt under open source licens, så  typsnittet han utvecklar skulle, i logisk parallell med huvudprojektet, var öppet för andra att bygga vidare på.  
  
 
 ### Spridning 3000 tecken
@@ -87,8 +96,9 @@ Vi kommer driva projektet enligt Free Software och Open Source principer och lic
 ### Bidrag till IIS domännamnsverksamhet 3000 tecken
 #### Ange vilka möjligheter till exponering IIS får som en följd av projektet.
 
-Sverige har ett starkt internationellt rykte som 
+Sverige har ett starkt internationellt rykte för skydd av yttrandefrihet och internetfrihet. Själva kärnan i systemet vi föreslår kommer fungera decentraliserat enligt peer-to-peer principer, och har ju därför en svår definierad geografisk hemvist. Dock är det mycket viktigt för oss att den . det vill säga 
 
+Vi tror att  
 
 
 
