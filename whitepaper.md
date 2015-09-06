@@ -12,9 +12,9 @@
 
 In this text we outline a decentralized platform for publication and distribution of digital texts. The purpose of the system is to enable long-term persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one component of a movement towards a different internet. 
 
-The system consists of three parts: a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed storage system(s) and a client for reading and publishing.
+The system consists of three parts: a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed storage system(s) and a client application for reading and publishing.
 
-We would like to re-assert, re-construct, re-bind the category of permanent publications as complements to information that should be allowed to expire.
+We would like to re-assert, re-bind, re-construct the category of the permanent publication as complement to information that should be allowed to expire.
 
 ## Background
 
@@ -22,9 +22,9 @@ What does the verb “to publish” mean in a time of hyper circulation? Accordi
 
 Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
 
-We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public. 
+We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public.  
 
-We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: A resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
+We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: a resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
 
 
 
@@ -47,7 +47,9 @@ To address these criteria we propose a system consisting of three parts
 
 Where (1) and (2) is a set of open standards (as far as possible made up of existing such standards) and (3) is a interface for interacting (reading/publishing) with the underlying system.
 
-X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. We believe it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer.
+X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. Many eBook-formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of other categories (web-sites, games.)     
+
+(This being said: We believe it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer. If this would prove of interest to some party.)
 
 ### Decentralized index
 
