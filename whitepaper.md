@@ -118,7 +118,7 @@ In order for X to be useful the layer that meets the user needs to offer a unifi
 
 ## Conclusion
 
-With Google rebranding as Alphabet and working to organize the world from A to Z, there is an urgent need for other models of organisation of our collective memory, beyond giant data centers and walled garden. We believe that recent developments offer opportunities for such new models. 
+With Google rebranding as Alphabet and working to organize the world from A to Z, there is an urgent need for other models of organisation of our collective memory, beyond giant data centers and walled gardens. We believe that recent developments offer opportunities for such new models. 
 
 
 ## References
