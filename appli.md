@@ -105,9 +105,7 @@ Vi kommer driva projektet enligt Free Software och Open Source principer och lic
 ### Bidrag till IIS domännamnsverksamhet 3000 tecken
 #### Ange vilka möjligheter till exponering IIS får som en följd av projektet.
 
-Sverige har ett starkt internationellt rykte för skydd av yttrandefrihet och internetfrihet. Själva kärnan i systemet vi föreslår kommer fungera decentraliserat enligt peer-to-peer principer, och har ju därför en svår definierad geografisk hemvist. Dock är det mycket viktigt för oss att den . det vill säga 
-
-Vi tror att  
+Sverige har ett starkt internationellt rykte för skydd av yttrandefrihet och internetfrihet. Själva kärnan i systemet vi föreslår kommer fungera decentraliserat enligt peer-to-peer principer, och har ju därför en svårdefinierad geografisk hemvist. Dock är det mycket viktigt för oss att den geografiska anknytning vi har är till en plats med gott dataskydd och bra lagstiftning.
 
 ### Uppföljning
 
