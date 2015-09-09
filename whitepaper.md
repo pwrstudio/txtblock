@@ -1,6 +1,6 @@
 # PUBLICATION SYSTEM X
 
-**DRAFT 1**
+<span style=“color:red;”>**DRAFT 1**</span>
 
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
