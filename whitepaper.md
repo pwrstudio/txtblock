@@ -34,6 +34,8 @@ We believe there is a need for long-term addressability of information: addresse
 											|
 									  PRIVATE
 
+![EP3 diagram](ep3-diagram-2.jpg)
+
 We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: a resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
 
 
