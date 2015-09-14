@@ -22,19 +22,10 @@ What does the verb “to publish” mean in a time of hyper circulation? Accordi
 
 Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
 
+![EP3 diagram](ep3-diagram-2.png)
+
 We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public.  
 
-									  PUBLIC
-											|
-											|
-											|
-	EPHEMERAL — — — — — | — — — — — PERMANENT
-											|
-											|
-											|
-									  PRIVATE
-
-![EP3 diagram](ep3-diagram-2.jpg)
 
 We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: a resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
 
