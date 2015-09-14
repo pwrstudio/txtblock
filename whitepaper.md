@@ -1,6 +1,6 @@
 # PUBLICATION SYSTEM X
 
-<span style=“color:red;”>**DRAFT 1**</span>
+**DRAFT 1**
 
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
@@ -10,9 +10,9 @@
 
 ## Introduction
 
-In this text we outline a decentralized platform for publication and distribution of digital texts. The purpose of the system is to enable long-term persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one component of a movement towards a different internet. 
+In this text we outline a decentralized platform for publication and distribution of digital texts. The purpose of the system is to enable long-term persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to a much larger movement towards a different internet. 
 
-The system consists of three parts: a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed storage system(s) and a client application for reading and publishing.
+The system consists of three parts: a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed peer-to-peer storage system(s) and a client application for reading and publishing.
 
 We would like to re-assert, re-bind, re-construct the category of the permanent publication as complement to information that should be allowed to expire.
 
@@ -23,6 +23,16 @@ What does the verb “to publish” mean in a time of hyper circulation? Accordi
 Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
 
 We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public.  
+
+									  PUBLIC
+											|
+											|
+											|
+	EPHEMERAL — — — — — | — — — — — PERMANENT
+											|
+											|
+											|
+									  PRIVATE
 
 We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: a resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
 
