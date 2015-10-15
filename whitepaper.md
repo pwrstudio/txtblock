@@ -1,6 +1,7 @@
-# PUBLICATION SYSTEM X
+# b10.hk
+# bl00.cc
 
-**DRAFT 1**
+**DRAFT 2**
 
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
@@ -10,26 +11,28 @@
 
 ## Introduction
 
-In this text we outline a decentralized platform for publication and distribution of digital texts. The purpose of the system is to enable long-term persistent identification of clearly defined units of information. Through a strong cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to a much larger movement towards a different internet. 
+In this text we outline a decentralized platform for publication and distribution of digital text. The purpose of the system is to enable long-term persistens of sharply defined, immutable units of information. Through a strong cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to the internet renaissance. 
 
-The system consists of three parts: a decentralized index, built on top of the [Ethereum] protocol and blockchain, a link to distributed peer-to-peer storage system(s) and a client application for reading and publishing.
+A smart contract, currently implemented on the [Ethereum] protocol and blockchain, acts a decentralized catalogue ( _babel_ in the local terminology of _b10.hk_) allowing publication and retrieval of units of texts (called _blocks_).
 
-We would like to re-assert, re-bind, re-construct the category of the permanent publication as complement to information that should be allowed to expire.
+As with most catalogues, _babel_ does not contain the content but only a reference: a hash (called _yinn_). The yinn can then be used to find the _block_ in a content-addressed, distributed, peer-to-peer file system, such as [IPFS].       
+
+A _reader-writer_ can interact with _babel_ and the _blocks_ in different ways, as it is an open protocol. One way is the typographic interface we are building at the address _b10.hk_.   
 
 ## Background
 
-What does the verb “to publish” mean in a time of hyper circulation? According to the dictionary “publishing” is either the business of producing books and magazines or – secondarily and more broadly – the act of making something public and drawing attention to it. Whereas in the not so distant past this activity was a major enterprise requiring considerable resources it has for the last decade become an increasingly everyday, even unconscious, activity. The technology needed for making something public on a potentially global scale is now at most people’s fingertips and the line between private and public is effectively blurred. While the action of printing, binding and distributing a book is an unmistakable step from the private to the public sphere, many current publishing tools exist in a grey zone in-between or will actively hide the fact that we are involved in an acts of making-public. 
-
-Is “publishing” then a anachronistic term best left behind in the age of paper? We believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
-
-![EP3 diagram](ep3-diagram-2.png)
-
-We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public.  
-
+What does the verb “to publish” mean in a society where every thought and step is digitized and stored? According to the dictionary “publishing” is either the business of producing books and magazines or – secondarily and more broadly – the act of making something public and drawing attention to it. The first definition is archaic and better left in the age of paper, but the second seems worth considering: What does "public" mean?   It is the opposite of private. In the past these two spheres where generally clearly defined. Today that line is effectively blurred. The action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. In contrast: many current publishing tools exist in a grey zone in-between or will actively hide the fact that we are involved in an acts of making-public. 
 
 We consider it a problem that the control of published information is increasingly centralized. Stored by a few major players – forming the core asset of their business model: a resource to be analysed and mined for commercial value. Perhaps overshadowing the problem of how information is stored is the problem of how information is found. It is very hard to assert the fairness of the search tools we use – how can we know what we can not find?
 
+In light of this, we believe there is a point in re-asserting the category of the “publication” – the creation of stable and clearly defined units of information as a complement to the ephemeral flow of everyday networked existence.
 
+![EP3 diagram](ep3-diagram-2.png)
+
+
+We would like to re-assert, re-bind, re-construct the category of the permanent publication as complement to information that should be allowed to expire.
+
+We believe there is a need for long-term addressability of information: addresses change, servers fail, companies go out of business. Schemes such as [Digital Object Identifier] or [Persistent uniform resource locator] and others have been implemented to come to terms with this. Most of them have depended on central points of authority – as well as failing to provide an attractive way of conceptualizing and visualizing the core feature of permanence to the general public. 
 
 ## Proposal
 
@@ -44,7 +47,7 @@ The criteria we set up for what constitutes a publication are:
 
 To address these criteria we propose a system consisting of three parts
 
-1. A decentralized index
+1. A decentralized catalogue
 2. A decentralized file sharing system
 3. A client application
 
@@ -52,9 +55,8 @@ Where (1) and (2) is a set of open standards (as far as possible made up of exis
 
 X is designed for publication of pure text. This decision is made to position X in the historical lineage of the book. Many eBook-formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of other categories (web-sites, games.)     
 
-(This being said: We believe it could in the future quite easily be extended to include other media or arbitrary data by adapting the client layer. If this would prove of interest to some party.)
 
-### Decentralized index
+### Babel – Decentralized catalogue
 
 The core of the system is a decentralized index or catalogue preserving references to all publications. Whereas previous solutions to the problem of persistent referability have relied on a central authority to issue certificates, X will use a transparent, autonomous authority system based on blockchain technology.
 
@@ -81,7 +83,7 @@ In addition to the identifier the catalogue will store a timestamp of the moment
 
 It will also be possible to refer to parts of the publication with a dot notation such as 
 
-	3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743
+3ac225168df54212a25c1c01fd35bebfea408fdac2e31ddd6f80a4bbf9a5f1cb.5f8743
     
 With the postfix being a offset from the start of the file.
 
@@ -123,6 +125,16 @@ In order for X to be useful the layer that meets the user needs to offer a unifi
 
 With Google rebranding as Alphabet and working to organize the world from A to Z, there is an urgent need for other models of organisation of our collective memory, beyond giant data centers and walled gardens. We believe that recent developments offer opportunities for such new models. 
 
+## Terminology
+
+Protocol				---				b10.cc
+Catalogue				---				babel 
+Publication 			–––				block
+Hash						---				yinn		
+File						---				slab
+Line						---				line
+Column					---				spine 
+Letter					---				grain
 
 ## References
 
