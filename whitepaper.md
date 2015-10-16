@@ -95,15 +95,26 @@ _txtblock_ is an experiment in this direction.
 
 ## Jargon
 
-	Protocol				---				txtblock
-	Catalogue				---				babel 
-	Publication 			–––				block
-	Hash						---				yinn		
-	File						---				script
-	Line					---				line
-	Column				---				spine 
-	Letter				---				grain
-	Interface				---				b10.hk
+	Protocol       ---      txtblock
+	Catalogue      ---				babel 
+	Publication    –––      block
+	Hash           ---	      yinn		
+	File           ---      script
+	Line           ---      line
+	Column         ---      spine 
+	Letter         ---      grain
+	Interface      ---	      b10.hk
+
+## References
+
+	[DOI]: https://www.doi.org
+	[ISBN]: https://www.isbn.org
+	[b10.hk]: https://b10.hk
+	[a new web]: https://blog.ethereum.org/2014/08/18/building-decentralized-web/
+	[Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
+	[cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
+	[IPFS]: http://ipfs.io/
+
 
 [DOI]: https://www.doi.org
 [ISBN]: https://www.isbn.org
