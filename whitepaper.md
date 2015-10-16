@@ -1,9 +1,9 @@
 # txtblock
 _Reading in the shade of the Merkle Tree_
 
-**DRAFT 2.01**
-
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
+
+- - -
 
 *”We need a way of consistently and accurately naming every piece of human knowledge, in such a way that their name arises out of the knowledge itself, out of its textual, visual, or aural representation, where the name is inextricably coupled to what it actually is. If we have that name, and if we use that name to refer to some information, and someone tries to change the contents, then it is either impossible or completely detectable by anyone using the name.”*
 
@@ -100,9 +100,9 @@ _txtblock_ is an experiment in this direction.
 	Publication 			–––				block
 	Hash						---				yinn		
 	File						---				script
-	Line						---				line
-	Column					---				spine 
-	Letter					---				grain
+	Line					---				line
+	Column				---				spine 
+	Letter				---				grain
 	Interface				---				b10.hk
 
 [DOI]: https://www.doi.org
