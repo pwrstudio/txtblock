@@ -1,6 +1,7 @@
-# b10.hk
+# txtblock
+_reading in the shade of the merle tree_
 
-**DRAFT 2**
+**DRAFT 2.0**
 
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
@@ -12,7 +13,7 @@
 
 In this text we outline a decentralized platform for publication and distribution of digital text. The purpose of the system is to enable long-term persistence of sharply defined, immutable units of information. Through a cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to the internet renaissance. 
 
-A smart contract, currently implemented on the [Ethereum] protocol and blockchain, acts a decentralized catalogue ( _babel_ in the local terminology of _b10.hk_) allowing publication and retrieval of units of texts (called _blocks_).
+A smart contract, currently implemented on the [Ethereum] protocol and blockchain, acts a decentralized catalogue ( _babel_ in the local terminology of _txtblock_) allowing publication and retrieval of units of texts (called _blocks_).
 
 As with most catalogues, _babel_ does not contain the actual content but only a reference: a hash (called _yinn_). The _yinn_ can then be used to find the _block_ in a content-addressed, distributed, peer-to-peer file system, such as [IPFS].       
 
@@ -38,17 +39,17 @@ We propose a system consisting of three parts:
 2. A decentralized file sharing system
 3. A client application
 
-Of course we do not want or need to construct the necessary foundations of the first two parts (not to mention that we would not be able to).
+Of course we do not want or need to construct the necessary foundations of the first two parts (not to mention that we would not be able to):
 
-For the catalogue we make use of a simple _smart contract_ running on the [Ethereum] blockchain.
+- For the catalogue we make use of a simple _smart contract_ running on the [Ethereum] blockchain.
 
-For the distribution of the actual content we are looking at the content-addressed, peer-to-peer file system [IPFS]. 
+- For the distribution of the actual content we are looking at the content-addressed, peer-to-peer file system [IPFS]. 
 
 This allows us to focus on point three: the interface and the conceptualization and aesthetics of the _block_.   
 
 ### Decentralized catalogue
 
-The core of the system is a decentralized catalogue preserving references to all _blocks_. Whereas previous solutions to the problem of persistent referability have relied on a central authority to issue certificates, b10.hk will use a transparent, autonomous authority system based on blockchain technology.
+The core of the system is a decentralized catalogue preserving references to all _blocks_. Whereas previous solutions to the problem of persistent referability have relied on a central authority to issue certificates, _txtblock_ will use a transparent, autonomous authority system based on blockchain technology.
 
 The specific technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines. This is the operating system on top of which the core of b10.hk runs. Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions transparently, without human involvement.
 
@@ -60,48 +61,54 @@ The core catalogue will only store a reference to the text. So how to get the ac
 
 ##### Format
 
-b10.hk is designed for publication of pure text.
+_txtblock_ is designed for publication of pure text. In this sense it exists in the lineage of the book.
 
-Many electronic book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games.) This seems pointless to us – 
+There is value in limitations. It makes the creative possibilities more apparent. To avoid the slippery slope of adding features we propose a strict, minimal framework: 
 
-We consider the 
+	unicode symbols
+	displayed in a monospace font 
+	laid out in 64 character lines
 
+In this way we would get a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The _block_ exists somewhere in the intersection between concrete poetry and code.
 
-code / literature / poetry
+Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games) 
 
-A connection to material metal typography – seeing the digital letters as having a certain "body"/volume, taking up a certain space.
+Others are simply ways of commodifying information – Apple's iBook, Amazon's kindl. This is worse than pointless...
 
-That way we would get a strict grid where letters line up vertically allowing for a visual/aestethic pattern-making/layout. It would bring it a bit closer to code than to literature. That is something we think could be an interesting area: the meeting between code and literature/poetry.
+We think there is a core of the Book that can serve a purpose today and in the future. This is, in contrast to many other forms of communication, as sharply defined units of information that, once published, once bound, are permanently frozen. Objects you can point to, discuss and critic.  
 
-aesthetic of the blockchain
+### Interface: b10.hk
 
-A header containing metadata is added to the content, affecting the hash/fingerprint and therefore subject to the same tamper resistance as the main content. We will use a simple key-value system such as the one outlined in [MultiMarkdown], with a few standard (but not compulsory) keys and the possibility of adding your own.
+In order for _txtblock_ to be useful there needs to be interfaces. 
 
-### Client
+We are developing one such interface. 
 
-In order for b10.hk to be useful the layer that meets the user needs to offer a unified, well-designed reading experience. It needs to bring attention to the underlying positives of the system without losing focus on the main thing: the text content. In line with the emphasis on the publication as a more self-contained unit of information, the design of the interface we envision will be distraction free – drawing on the tradition of book technology while being very aware of the context of screen based reading. Through the design of the experience we aim to draw a strong line between the private and the public – storing texts encrypted on the local device until published – making it clear to the user when this line is crossed. 
+As a first step we are constructing it as a http web-app at the address [b10.hk]. This will act as a gateway to the _babel_ catalogue, allowing reading and writing of blocks as well as searching. 
+
+The interface will be strictly typographic with all of the design encapsulated in a newly designed open source monospace font.  
 
 ## Conclusion
 
-With Google rebranding as Alphabet and working to organize the world from A to Z, there is an urgent need for other models of organisation of our collective memory, beyond giant data centers and walled gardens. We believe that recent developments offer opportunities for such new models. 
+The current web is based on a business model of Spying on users, selling the information and advertisements. But recent developments combining blockchain and peer-to-peer technology open possibilities to other models beyond giant data centers, Amazon Allowance and walled gardens. 
 
-The current web is based on a business model of Spying on users, selling the information and advertisements.
+_txtblock_ is an experiment in this direction. 
 
-## Terminology
+## Jargon
 
-Interface				---				b10.hk
-Protocol				---				babel
+Protocol				---				txtblock
 Catalogue				---				babel 
 Publication 			–––				block
 Hash						---				yinn		
-File						---				slab
+File						---				script
 Line						---				line
 Column					---				spine 
 Letter					---				grain
+Interface				---				b10.hk
 
-## References
-
-	[DOI]: https://www.doi.org
-	[Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
-	[cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
-	[IPFS]: http://ipfs.io/
+[DOI]: https://www.doi.org
+[ISBN]: https://www.isbn.org
+[b10.hk]: https://b10.hk
+[a new web]: https://blog.ethereum.org/2014/08/18/building-decentralized-web/
+[Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
+[cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
+[IPFS]: http://ipfs.io/
