@@ -95,15 +95,15 @@ _txtblock_ is an experiment in this direction.
 
 ## Jargon
 
-	Protocol       ---      txtblock
-	Catalogue      ---				babel 
-	Publication    –––      block
-	Hash           ---	      yinn		
-	File           ---      script
-	Line           ---      line
-	Column         ---      spine 
-	Letter         ---      grain
-	Interface      ---	      b10.hk
+	Protocol = txtblock
+	Catalogue = babel 
+	Publication = block
+	Hash = yinn		
+	File = script
+	Line = line
+	Column = spine 
+	Letter = grain
+	Interface =  b10.hk
 
 ## References
 
