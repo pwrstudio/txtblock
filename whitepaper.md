@@ -1,7 +1,7 @@
 # txtblock
-_reading in the shade of the merle tree_
+_Reading in the shade of the Merkle Tree_
 
-**DRAFT 2.0**
+**DRAFT 2.01**
 
 *Rasmus Svensson & Hanna Nilsson (PWR studio)*
 
@@ -17,7 +17,7 @@ A smart contract, currently implemented on the [Ethereum] protocol and blockchai
 
 As with most catalogues, _babel_ does not contain the actual content but only a reference: a hash (called _yinn_). The _yinn_ can then be used to find the _block_ in a content-addressed, distributed, peer-to-peer file system, such as [IPFS].       
 
-As all the specifications and code is made public, a _reader-writer_ can interact with _babel_ and the _blocks_ in whatever way they choose. One way is the typographic interface we are building at the address _b10.hk_.   
+As all the specifications and code is made public, a _reader-writer_ can interact with _babel_ and the _blocks_ in whatever way they choose. One way is the typographic interface we are building at the address [b10.hk].   
 
 ## Background
 
@@ -41,7 +41,7 @@ We propose a system consisting of three parts:
 
 Of course we do not want or need to construct the necessary foundations of the first two parts (not to mention that we would not be able to):
 
-- For the catalogue we make use of a simple _smart contract_ running on the [Ethereum] blockchain.
+- For the catalogue we make use of a simple smart contract running on the [Ethereum] blockchain.
 
 - For the distribution of the actual content we are looking at the content-addressed, peer-to-peer file system [IPFS]. 
 
@@ -59,7 +59,7 @@ In contrast to a [ISBN] or [DOI] number, a _yinn_ is directly tied to the inform
 
 The core catalogue will only store a reference to the text. So how to get the actual text? There are a number of distributed storage systems under development. The one we are looking at using currently is [IPFS] – a file system working according similar principles as BitTorrent: by reading a file you become a point of distribution for other readers and you contribute to the preservation of the _block_.
 
-##### Format
+### Format: limits and æsthetics
 
 _txtblock_ is designed for publication of pure text. In this sense it exists in the lineage of the book.
 
@@ -95,15 +95,15 @@ _txtblock_ is an experiment in this direction.
 
 ## Jargon
 
-Protocol				---				txtblock
-Catalogue				---				babel 
-Publication 			–––				block
-Hash						---				yinn		
-File						---				script
-Line						---				line
-Column					---				spine 
-Letter					---				grain
-Interface				---				b10.hk
+	Protocol				---				txtblock
+	Catalogue				---				babel 
+	Publication 			–––				block
+	Hash						---				yinn		
+	File						---				script
+	Line						---				line
+	Column					---				spine 
+	Letter					---				grain
+	Interface				---				b10.hk
 
 [DOI]: https://www.doi.org
 [ISBN]: https://www.isbn.org
