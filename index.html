@@ -1,1 +1,38 @@
-My Page
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>txtblock – reading in the shade of the merkle tree</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="txtblock is a decentralized platform for publication and distribution of digital text.">
+    <meta name="keywords" content="reading, blockchain, ethereum, ipfs, peer-to-peer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="font/whois/stylesheet.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container" id="content">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $.ajax("https://raw.githubusercontent.com/pwrstudio/txtblock/master/whitepaper.md")
+                .done(function (data) {
+                    document.getElementById('content').innerHTML = marked(data);
+                });
+        });
+    </script>
+
+</body>
+
+</html>

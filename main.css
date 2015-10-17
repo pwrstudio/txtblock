@@ -1,0 +1,108 @@
+html,
+body {
+    font-family: whoismono;
+    background: #f00;
+    color: #000;
+    font-size: 19px;
+    line-height: 1.3em
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+hr::before {
+    content: "– – –";
+}
+
+pre {
+    display: block;
+    padding: 0px;
+    font-size: 19px;
+    color: #000;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+code {
+    font-family: whoismono;
+}
+
+*::-moz-selection {
+    background: white
+}
+
+*::selection {
+    background: white
+}
+
+em {
+    font-style: normal;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+li {
+    font-size: inherit;
+}
+
+h1::before {
+    content: "# ";
+}
+
+h2::before {
+    content: "# # ";
+}
+
+h3::before {
+    content: "# # # ";
+}
+
+h4::before {
+    content: "# # # # ";
+}
+
+ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+ul li {
+    margin-left: none;
+}
+
+ul li p::before {
+    content: "— "
+}
+
+p {
+    margin-top: 1em;
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 32em;
+}
