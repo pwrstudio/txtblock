@@ -3,7 +3,7 @@ body {
     font-family: whoismono;
     background: #f00;
     color: #000;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.3em
 }
 
@@ -23,7 +23,7 @@ hr::before {
 pre {
     display: block;
     padding: 0px;
-    font-size: 32px;
+    font-size: 30px;
     color: #000;
     word-break: break-all;
     word-wrap: break-word;
@@ -105,4 +105,12 @@ p {
 .container {
     margin-top: 30px;
     max-width: 32em;
+}
+
+@media (max-width: 600px) {
+    html,
+    body,
+    pre {
+        font-size: 20px;
+    }
 }
