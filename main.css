@@ -3,7 +3,7 @@ body {
     font-family: whoismono;
     background: #f00;
     color: #000;
-    font-size: 19px;
+    font-size: 32px;
     line-height: 1.3em
 }
 
@@ -23,7 +23,7 @@ hr::before {
 pre {
     display: block;
     padding: 0px;
-    font-size: 19px;
+    font-size: 32px;
     color: #000;
     word-break: break-all;
     word-wrap: break-word;
