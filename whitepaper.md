@@ -1,7 +1,7 @@
 # txtblock
 _Reading in the shade of the Merkle Tree_
 
-*Rasmus Svensson & Hanna Nilsson (PWR studio)*
+*Rasmus Svensson & Hanna Nilsson ([PWR])*
 
 - - -
 
@@ -123,3 +123,4 @@ _txtblock_ is an experiment in this direction.
 [Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
 [cryptographic hashing function]: http://emn178.github.io/online-tools/sha3_256.html
 [IPFS]: http://ipfs.io/
+[PWR]: http://pwr.site 
