@@ -11,7 +11,7 @@ _Reading in the shade of the Merkle Tree_
 
 ## Introduction
 
-In this text we outline a decentralized platform for publication and distribution of digital text. The purpose of the system is to enable long-term persistence of sharply defined, immutable units of information. Through a cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to the internet renaissance. 
+In this text we outline a decentralized platform for publishing and distribution of digital text. The purpose of the system is to enable long-term persistence of sharply defined, immutable units of information. Through a cryptographic link between the identifier and the identified (a digital fingerprint) the system is made tamper-proof and resistant to censorship. We see this proposal as one small contribution to the internet renaissance. 
 
 A smart contract, currently implemented on the [Ethereum] protocol and blockchain, acts a decentralized catalogue ( _babel_ in the local terminology of _txtblock_) allowing publication and retrieval of units of texts (called _blocks_).
 
