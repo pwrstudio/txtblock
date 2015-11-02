@@ -13,17 +13,17 @@ In this text, we describe a decentralized tool for publishing and distribution o
 
 The Block is cryptographically bound and given a name that is directly coupled to the content so that changing a single letter will be clearly detectable. In this way it is made tamper-proof and resistant to censorship. 
 
-We see this proposal as one small contribution to the Internet Renaissance. 
+We see this proposal as one small contribution to the internet renaissance. 
  
 ## Background
 
 What does it mean to publish, in a society where every thought, movement and moment is recorded and stored? Let's say that publishing is simply the act of making something public and drawing attention to it. And let's agree that the opposite of public is private. 
 
-Public and private. In the past, these two spheres were clearly defined and separate. Today, they overlap and merge and melt together on a IKEA couch. In the context of traditional publishing, the action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
+Public and private. In the past, these two spheres were clearly defined and separate. Today, they overlap and merge and melt together on an IKEA couch. In the context of traditional publishing, the action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
 
-After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. Is the message meant for one special person? Or for the all intelligent lifeforms? Should it expired after five minutes? Or remain until the last bit of information is overtaken by entropy?
+After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. Is the message meant for one special person? Or for the all intelligent lifeforms? Should it expire after five minutes? Or remain until the last bit of information is overtaken by entropy?
 
-We see the Block as existing on the extreme point of both the private/public and the temporary/permanent scale: a Block is public and permanent. An inscription in stone. The block is the book is the brick.
+We see the Block as existing on the extreme point of both the private/public and the temporary/permanent scale: a Block is public and permanent. An inscription in stone. The Block is the Book is the Brick.
 
 The humble aim of txtblock is to enable eternal identification of clearly defined immutable units of textual information. 
 
@@ -35,7 +35,7 @@ We see txtblock as consisting of three components:
 2. Storage
 3. Interface / Format
 
-Point one and two, catalogue and storage, rely on the blockchain-infrastructure provided by the [Ethereum] platform. This allows us to focus on the interface and the conceptual and aesthetic format of the Block.   
+Point one and two, catalogue and storage, rely on the blockchain infrastructure provided by the [Ethereum] platform, leaving us to focus on the interface and the conceptual and aesthetic format of the Block.   
 
 ### Decentralized catalogue
 
@@ -43,7 +43,7 @@ The core component of txtblock is a decentralized catalogue containing cryptogra
 
 The specific technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing the agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines, a digital scriptorium. Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions without human involvement.
 
-In contrast to an [ISBN] or [DOI] number, a txtblock-identifier is directly tied to the information it identifies. By using a [cryptographic hashing function], a fingerprint of the information is created. Changing a single letter in the text will completely change the fingerprint. A modified file would, therefore, fail verification against the catalogue. This allows certainty that the text you are reading is indeed the exact text that was published.
+In contrast to an ISBN number, a txtblock-identifier is directly tied to the information it identifies. By using a [cryptographic hashing function], a fingerprint of the information is created. Changing a single letter in the text will completely change the fingerprint. A modified file would, therefore, fail verification against the catalogue. This allows certainty that the text you are reading is indeed the exact text that was published.
 
 ### Decentralized storage
 
@@ -51,23 +51,23 @@ How to store the actual texts? Two alternatives:
 
 1. The sensible, scalable solution. Recommended best practice: The catalogue, on the blockchain, contains a reference to the text which is stored off the blockchain, on a [Content-addressed, distributed, peer-to-peer file system.](http://ipfs.io)
 
-2. The more conceptually and aesthetically pleasing alternative: The text itself is stored directly on the blockchain, embedded within it. Piggybacking on the piggybank. Kept safe as long as there is value stored on the chain. Some would consider this an abuse of the blockchain. We disagree. Writing to the blockchain is relatively expensive. One letter costs 0.00005 US dollar. Publishing the text we are reading to you right now would require a one-time payment of about 60 cent – paid to the nodes of the network who perform the labour of writing it to the database. txtblock is meant for very special information that you want to commit to eternity. And text is compact compared to other media. So the cost, according to current market-prices, is reasonable – and even a desirable feature adding a economic treshhold you have to cross to go from private to public. And perhaps the inclusion of potentially valuable textual material will add to the overall value of the chain?
+2. The more conceptually and aesthetically pleasing alternative: The text itself is stored directly on the blockchain. Merging the ledger and the book. Piggybacking on the piggybank. The text is kept safe as long as there is value stored on the chain. Some would consider this an abuse of the blockchain. We disagree. Writing to the blockchain is relatively expensive. One letter costs 0.00005 US dollar. Publishing the text you are reading right now would require a one-time payment of about 60 cent. This is too much for most applications – but txtblock is meant for the very special kind of information that you want to commit to eternity. Text is compact compared to other media so the cost, according to current market-prices, is reasonable – and even perhaps a desirable feature adding a threshold you have to cross to go from private to public. And perhaps the inclusion of potentially valuable textual material will add to the overall value of the chain?
 
-### Format: limits and æsthetics
+### Format: limits and aesthetics
 
-txtblock is designed for publication of pure text. In this sense, it exists in the lineage of the book.
+txtblock is designed for publishing of pure text. In this sense, it exists in the lineage of the typographic book.
 
 Why not images, video and other richer media? There is value in limitations. It makes the creative possibilities more apparent. To avoid the slippery slope of adding features we propose a strict, minimal framework: 
 
-	unicode symbols
-	displayed in a monospace font 
-	laid out in 64 character lines
+    unicode symbols
+    displayed in a monospace font 
+    laid out in 64 character lines
 
-In this way, we would get a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The Block exists somewhere in the intersection between concrete poetry and code. The interface of txtblock is strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font.
+In this way, we construct a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The Block exists at the intersection of concrete poetry and code. The interface of txtblock is strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font.
 
-Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games). Others are simply ways of commodifying information – Apple's iBook, Amazon's Kindle. This is worse than pointless...
+Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content) making it into a less good version of already existing forms (web-sites, games, apps). Others are simply ways of commodifying information – Apple's iBook, Amazon's Kindle. This is worse than pointless...
 
-We think there is a core of the Book that can serve a purpose today and in the future. This is, in contrast to many other forms of communication, as sharply defined units of information that, once published, once bound, are permanently frozen. Objects you can point to, discuss and critic. This what we call the Block.  
+We think there is a core of the Book that can serve a purpose today and in the future. This is, in contrast to many other forms of communication, as sharply defined units of information that, once published, once bound, are permanently frozen. Objects you can point to, discuss and critic. This is what we call the Block.  
 
 ## Conclusion
 
