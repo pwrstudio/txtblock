@@ -1,5 +1,5 @@
 # txtblock
-_Reading in the shade of the Merkle Tree_
+Reading in the shade of the Merkle Tree
 
 *Rasmus Svensson & Hanna Nilsson ([PWR])*
 
@@ -9,25 +9,23 @@ _Reading in the shade of the Merkle Tree_
 
 ## Introduction
 
-In this text, we describe a decentralized tool for publishing and distribution of digital text. We propose a format called the Block: a sharply defined, eternal, immutable unit of information. The Block is the successor of the Book.
+In this text, we describe a decentralized tool for publishing and distribution of digital text. We propose a format called the Block: a squarely defined, eternal, immutable unit of information. The Block is the successor of the Book.
 
-Through a cryptographic link between the identifier and the content, or even the embedding of the content within a cryptographic control structure, the system is made tamper-proof and resistant to censorship. 
+The Block is cryptographically bound and given a name that is directly coupled to the content so that changing a single letter will be clearly detectable. In this way it is made tamper-proof and resistant to censorship. 
 
-We see this proposal as one small contribution to the internet renaissance. 
+We see this proposal as one small contribution to the Internet Renaissance. 
  
 ## Background
 
-What does it mean "to publish" in a society where every thought, movement and moment is recorded and stored? Let's say that publishing is simply the act of making something public and drawing attention to it. And let's agree that the opposite of public is private. 
+What does it mean to publish, in a society where every thought, movement and moment is recorded and stored? Let's say that publishing is simply the act of making something public and drawing attention to it. And let's agree that the opposite of public is private. 
 
-Public and Private. In the past, these two spheres were clearly defined and separate. Today they overlap and merge and melt together on a IKEA couch. In the context of traditional publishing, the action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
+Public and private. In the past, these two spheres were clearly defined and separate. Today, they overlap and merge and melt together on a IKEA couch. In the context of traditional publishing, the action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
 
-After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. We also find it useful to introduce a second axis: temporary/private, to allow us to re-consider the lifespan of information: to give us, the users, the choice between forms of communication from burn-on-read to eternal-life. 
+After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. Is the message meant for one special person? Or for the all intelligent lifeforms? Should it expired after five minutes? Or remain until the last bit of information is overtaken by entropy?
 
-As a step in this direction we believe there is a point in re-asserting the category of "the book" – beyond – meaning the creation of stable and clearly defined units of public information, something that can be uniquely referred to in public discourse independent of central authorities and big commercial interests.
+We see the Block as existing on the extreme point of both the private/public and the temporary/permanent scale: a Block is public and permanent. An inscription in stone. The block is the book is the brick.
 
 The humble aim of txtblock is to enable eternal identification of clearly defined immutable units of textual information. 
-
-We see the Block (the name we use for the published text unit) as existing on the extreme point of both the private/public and the temporary/permanent scale: a Block is public and permanent. An inscription in stone. The block is the book is the brick.
 
 ## Proposal 
 
@@ -37,29 +35,29 @@ We see txtblock as consisting of three components:
 2. Storage
 3. Interface / Format
 
-Point one and two, catalogue and storage, rely on the blockchain-infrastructure provided by the [Ethereum] platform. This makes them fairly uncomplicated to implement. This allows us to focus on the interface and the conceptual and aesthetic format of the Block.   
+Point one and two, catalogue and storage, rely on the blockchain-infrastructure provided by the [Ethereum] platform. This allows us to focus on the interface and the conceptual and aesthetic format of the Block.   
 
 ### Decentralized catalogue
 
-The core component of txtblock is a decentralized catalogue containing cryptographic fingerprints, or hashes. These provide an absolute reference to the publications – uniquely based on the content. This catalogue is the autonomous point of authority. A smart contract, a simple program on the blockchain, allows publication and retrieval of units of texts.
+The core component of txtblock is a decentralized catalogue containing cryptographic fingerprints, or hashes. These provide an absolute reference to the publications – uniquely based on the content. This catalogue is the autonomous point of authority keeping track of what has been made public when. A smart contract, a simple program on the blockchain, allows publication and retrieval of units of texts.
 
-The specific technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing the agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines. Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions without human involvement.
+The specific technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing the agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines, a digital scriptorium. Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions without human involvement.
 
-In contrast to for example an [ISBN] or [DOI] number, a _yinn_ is directly tied to the information it identifies. By using a [cryptographic hashing function], a fingerprint of the information is created. Changing a single letter in the text will completely change the fingerprint. A modified file would, therefore, fail verification against the catalogue. This allows certainty that the text you are reading is indeed the exact text that was published.
+In contrast to an [ISBN] or [DOI] number, a txtblock-identifier is directly tied to the information it identifies. By using a [cryptographic hashing function], a fingerprint of the information is created. Changing a single letter in the text will completely change the fingerprint. A modified file would, therefore, fail verification against the catalogue. This allows certainty that the text you are reading is indeed the exact text that was published.
 
 ### Decentralized storage
 
-How to store the actual texts? Two alternatives.
+How to store the actual texts? Two alternatives:
 
-1. The sensible, scalable solution. Recommended best practice: The catalogue, **on** the blockchain, contains a reference to the text which is stored **off** the blockchain, on a [Content-addressed, distributed, peer-to-peer file system.](http://ipfs.io)
+1. The sensible, scalable solution. Recommended best practice: The catalogue, on the blockchain, contains a reference to the text which is stored off the blockchain, on a [Content-addressed, distributed, peer-to-peer file system.](http://ipfs.io)
 
-2. The more conceptually and aesthetically pleasing alternative: The text itself is stored directly **on** the blockchain, embedded within it. Piggybacking on the piggybank. Might be considered "bloat" or vandalism. But according to the market logics that govern To write a letter to the blockchain costs 0.00005 US dollar. Publishing the text we are reading to you right now would cost about 50 cent – paid to the nodes of the network who perform the labour of writing it to the database. 50 cent – considering that this price theoretically buys your text eternal life this is not too bad...
+2. The more conceptually and aesthetically pleasing alternative: The text itself is stored directly on the blockchain, embedded within it. Piggybacking on the piggybank. Kept safe as long as there is value stored on the chain. Some would consider this an abuse of the blockchain. We disagree. Writing to the blockchain is relatively expensive. One letter costs 0.00005 US dollar. Publishing the text we are reading to you right now would require a one-time payment of about 60 cent – paid to the nodes of the network who perform the labour of writing it to the database. txtblock is meant for very special information that you want to commit to eternity. And text is compact compared to other media. So the cost, according to current market-prices, is reasonable – and even a desirable feature adding a economic treshhold you have to cross to go from private to public. And perhaps the inclusion of potentially valuable textual material will add to the overall value of the chain?
 
 ### Format: limits and æsthetics
 
-_txtblock_ is designed for publication of pure text. In this sense, it exists in the lineage of the book.
+txtblock is designed for publication of pure text. In this sense, it exists in the lineage of the book.
 
-Why not images, video, embedded html5? There is value in limitations. It makes the creative possibilities more apparent. To avoid the slippery slope of adding features we propose a strict, minimal framework: 
+Why not images, video and other richer media? There is value in limitations. It makes the creative possibilities more apparent. To avoid the slippery slope of adding features we propose a strict, minimal framework: 
 
 unicode symbols
 displayed in a monospace font 
@@ -67,7 +65,7 @@ laid out in 64 character lines
 
 In this way, we would get a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The Block exists somewhere in the intersection between concrete poetry and code.
 
-The interface will be strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font, designed in collaboration with typographer and artist Raphael Bastide.
+The interface will be strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font.
 
 Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games) 
 
@@ -89,9 +87,9 @@ Functionally it is block stacked on block stacked on block, each one locking the
 
 The blockchain could be the Merkle Tree that enables the Rhizome, the necessary hierarchical element providing control and coordination.
 
-The current web is based on a business model of spying on users and selling the information. We believe we're at a very interesting point where a combination of blockchain technology with peer-to-peer file systems gives the tools for re-inventing the web, and opening possibilities to other models beyond giant data centers, Amazon Allowance and Walled Gardens. 
+The current web is based on a business model of spying on users and selling the information. We believe we are at a very interesting point where a combination of blockchain technology with peer-to-peer file systems gives the tools for re-inventing the web, and opening possibilities to other models beyond giant data centers, Amazon Allowance and Walled Gardens. 
 
-_txtblock_ is an experiment in this direction. 
+txtblock is an experiment in this direction. 
 
 
 [Ethereum]: https://github.com/ethereum/wiki/wiki/White-Paper
