@@ -11,17 +11,17 @@ Reading in the shade of the Merkle Tree
 
 In this text, we describe a decentralized tool for publishing and distribution of digital text. We propose a format called the Block: a squarely defined, eternal, immutable unit of information. The Block is the successor of the Book.
 
-The Block is cryptographically bound and given a name that is directly coupled to the content so that changing a single letter will be clearly detectable. In this way it is made tamper-proof and resistant to censorship. 
+The Block is cryptographically bound and given a name that is directly derived from the content, so that changing a single letter will be clearly detectable. In this way it is made tamper-proof and resistant to censorship.
 
-We see this proposal as one small contribution to the internet renaissance. 
+We see this proposal as one small contribution to the Internet Renaissance. 
  
 ## Background
 
-What does it mean to publish, in a society where every thought, movement and moment is recorded and stored? Let's say that publishing is simply the act of making something public and drawing attention to it. And let's agree that the opposite of public is private. 
+What does "to publish" mean in a society where every thought, movement and moment is recorded and stored? Let's say that publishing is simply the act of making something public and drawing attention to it. And let's agree that the opposite of public is private. 
 
-Public and private. In the past, these two spheres were clearly defined and separate. Today, they overlap and merge and melt together on an IKEA couch. In the context of traditional publishing, the action of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
+Public and private. In the past, these two spheres were clearly defined and separate. Today, they overlap and merge and melt together on an IKEA couch. In the context of traditional publishing, the acts of printing, binding and distributing a book was an unmistakable step from the private to the public sphere. The writer in her chamber working on the manuscript, bringing it to the publishing house and so on down the production line. In contrast, current info-tools work in a grey zone in-between, obfuscating where data ends up and how it is exploited.
 
-After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. Is the message meant for one special person? Or for the all intelligent lifeforms? Should it expire after five minutes? Or remain until the last bit of information is overtaken by entropy?
+After the revelations of the last years it has become increasingly clear that the categories "private" and "public" need to be re-defined to give the user the choice of where on this private/public spectrum she is communicating. Is the message meant for one special person? Or for the community of all intelligent lifeforms? Should it expire after five minutes? Or persist until the last bit of information is overtaken by entropy?
 
 We see the Block as existing on the extreme point of both the private/public and the temporary/permanent scale: a Block is public and permanent. An inscription in stone. The Block is the Book is the Brick.
 
@@ -29,7 +29,7 @@ The humble aim of txtblock is to enable eternal identification of clearly define
 
 ## Proposal 
 
-We see txtblock as consisting of three components:
+txtblock consists of three components:
 
 1. Catalogue
 2. Storage
@@ -41,7 +41,7 @@ Point one and two, catalogue and storage, rely on the blockchain infrastructure 
 
 The core component of txtblock is a decentralized catalogue containing cryptographic fingerprints, or hashes. These provide an absolute reference to the publications – uniquely based on the content. This catalogue is the autonomous point of authority keeping track of what has been made public when. A smart contract, a simple program on the blockchain, allows publication and retrieval of units of texts.
 
-The specific technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing the agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines, a digital scriptorium. Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions without human involvement.
+The technology that enables this is [Ethereum], a decentralized platform that runs smart contracts. Fundamentally it is a system, based on blockchain database technology, allowing the agreement between nodes in a network without a central authority. The integrity of the system is maintained through the economically incentivized cryptographic labour of the participating machines, a digital [scriptorium](http://41.media.tumblr.com/21b3c3e36c8ab901deaf0d6d32417a7f/tumblr_mvsmxuO0m11soj7s4o1_1280.jpg). Publishing is simply the operation of making an entry into this distributed, public database. The catalogue functions without human gatekeepers.
 
 In contrast to an ISBN number, a txtblock-identifier is directly tied to the information it identifies. By using a [cryptographic hashing function], a fingerprint of the information is created. Changing a single letter in the text will completely change the fingerprint. A modified file would, therefore, fail verification against the catalogue. This allows certainty that the text you are reading is indeed the exact text that was published.
 
