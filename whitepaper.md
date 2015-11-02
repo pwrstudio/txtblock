@@ -59,19 +59,15 @@ txtblock is designed for publication of pure text. In this sense, it exists in t
 
 Why not images, video and other richer media? There is value in limitations. It makes the creative possibilities more apparent. To avoid the slippery slope of adding features we propose a strict, minimal framework: 
 
-unicode symbols
-displayed in a monospace font 
-laid out in 64 character lines
+	unicode symbols
+	displayed in a monospace font 
+	laid out in 64 character lines
 
-In this way, we would get a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The Block exists somewhere in the intersection between concrete poetry and code.
+In this way, we would get a strict grid where letters line up vertically giving the writer a rudimentary but predictable control of the layout. The Block exists somewhere in the intersection between concrete poetry and code. The interface of txtblock is strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font.
 
-The interface will be strictly typographic with all of the design encapsulated in an open-source monospace, fixed-width font.
+Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games). Others are simply ways of commodifying information – Apple's iBook, Amazon's Kindle. This is worse than pointless...
 
-Current e-book formats (e.g. ePub) try to adapt the book/publication-concept to things that are not a good fit for it (interactivity, variable content, etc…) making it into a less good version of already existing forms (web-sites, games) 
-
-Others are simply ways of commodifying information – Apple's iBook, Amazon's Kindle. This is worse than pointless...
-
-We think there is a core of the Book that can serve a purpose today and in the future. This is, in contrast to many other forms of communication, as sharply defined units of information that, once published, once bound, are permanently frozen. Objects you can point to, discuss and critic.  
+We think there is a core of the Book that can serve a purpose today and in the future. This is, in contrast to many other forms of communication, as sharply defined units of information that, once published, once bound, are permanently frozen. Objects you can point to, discuss and critic. This what we call the Block.  
 
 ## Conclusion
 
